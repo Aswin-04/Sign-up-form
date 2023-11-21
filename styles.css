@@ -1,5 +1,129 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 600px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    backdrop-filter: blur(5px);
+    border: 2px solid #f4f1f6;
+    border-radius: 10px;
+}
+
+form {
+    width: inherit;
+    height: 450px;
+    padding: 20px 30px;
+
+    display: flex;
+    flex-flow:wrap;
+    
+}
+
+input {
+    height: 30px;
+    width: 210px;
+
+    padding: 0px 8px;
+    border: none;
+    outline: none;
+
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px black, 
+                -1px -1px 5px black;
+}
+
+.form-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.form-row:nth-child(2n+1) {
+    margin-right: 50px;
+}
+
+h2 {
+    margin-top: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    font-size: 32px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    align-self: flex-start;
+    padding: 8px 40px;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    color: white;
+    background-color: rgb(245, 138, 224);
+    box-shadow: 1px 1px 5px black;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color:  rgb(255, 0, 204);
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: rgb(255, 0, 204);
+}
+
+ion-icon {
+    --ionicon-stroke-width: 40px;
+    font-size: 20px;
+}
+
+input:focus:valid {
+    border: 3px solid green;
+    box-shadow: none;
+}
+
+input:valid {
+    border: 3px solid green;
+    box-shadow: none;
+}
+/* Style for invalid input */
+input:focus {
+    border:3px solid red;
+    box-shadow: none;
 }
